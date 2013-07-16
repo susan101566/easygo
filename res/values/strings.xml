@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Easy Go</string>
+    <string name="hello_world">Welcome to Easy Go!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_easy_go_main">Easy Go</string>
+    <string name="view_all">View All</string>
+    <string name="back">Back</string>
+    <string name="search">Simple Search</string>
+    <string name="see">See</string>
+    <string name="leaving">Leaving From</string>
+    <string name="arriving">Arriving At</string>
+    <string name="next">Next</string>
+    <string name="prompt_1">On this beautiful %1$s, you can %2$s %3$s on</string>
+    <string name="prompt_2"> when heading towards %1$s.</string>
+    <string name="prompt_next">If you can afford a few minutes, the next bus %1$s</string>
+    <string name="prompt_previous">Perhaps you like the previous one, which %1$s</string>
+    <string name="prompt_3">Enjoy your trip!</string>
+    <string name="current">View Schedule</string>
+    <string name="bus_prompt">Please Enter The Bus Name Here</string>
+    <string name="bus_title">Bus</string>
+    <string name="destination_title">Destination</string>
+    <string name="time">Set Time</string>
+    <string name="time_prompt">When would you prefer the bus to arrive?</string>
+    <string name="weekday_prompt">Which day of the week is it?</string>
+    <string name="stops_prompt">Which stop would the bus arrive?</string>
+    <string name="story_prompt">ARRIVING AT: arrive at the stop at the selected time\nLEAVING FROM: leave the stop at the selected time</string>
+
+    <string-array name="weekinfo">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="stops_title">Select Stop</string>
+    <string name="weekday_title">Select Weekday</string>
+
+</resources>

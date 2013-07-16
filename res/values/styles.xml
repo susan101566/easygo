@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="story" parent="android:Theme.Light">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="time" parent="android:Theme.Light">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="backbutton" parent="android:Theme.Light">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:background">@drawable/prevbutton</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/back</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="nextbutton" parent="backbutton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">false</item>
+        <item name="android:background">@drawable/nextbutton</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/next</item>
+    </style>
+
+    <style name="schedulebutton" parent="time">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:background">@drawable/viewschedulebutton</item>
+        <item name="android:text">@string/current</item>
+    </style>
+
+    <style name="dropdown" parent="android:Theme.Light">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/dropdownbutton</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+</resources>

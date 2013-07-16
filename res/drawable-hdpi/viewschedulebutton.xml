@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/schedule_selector">
+
+    <item android:drawable="@drawable/viewschedule" android:state_focused="true"/>
+    <item android:drawable="@drawable/viewschedule_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/viewschedule" android:state_focused="false" android:state_pressed="false"/>
+
+</selector>

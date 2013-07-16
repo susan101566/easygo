@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/topcenter"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/backbutton"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:id="@+id/leaving"
+            style="@style/nextbutton"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/leaving" />
+
+        <Button
+            android:id="@+id/arriving"
+            style="@style/nextbutton"
+            android:layout_below="@id/leaving"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/arriving" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/busText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/bus_prompt"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/time_prompt"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_prompt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dropdownbutton"
+        android:text="@string/time"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weekday_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeButton"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/weekday_prompt"
+        android:textSize="10sp" />
+
+    <Spinner
+        android:id="@+id/weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weekday_prompt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dropdownbutton"
+        android:entries="@array/weekinfo"
+        android:prompt="@string/weekday_title"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stops_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weekday"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/stops_prompt"
+        android:textSize="10sp" />
+
+    <Spinner
+        android:id="@+id/stops"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stops_prompt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dropdownbutton"
+        android:prompt="@string/stops_title"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/story_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stops"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/story_prompt"
+        android:textSize="10sp" />
+
+</RelativeLayout>

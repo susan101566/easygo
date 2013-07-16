@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logo_center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/selectOther"
+        style="@style/nextbutton"
+        android:layout_marginRight="5dp"
+        android:text="@string/next" />
+
+    <AutoCompleteTextView
+        android:id="@+id/bus_name"
+        style="@style/dropdown"
+        android:layout_width="280dp"
+        android:layout_centerVertical="true"
+        android:completionThreshold="1"
+        android:hint="@string/bus_prompt"
+        android:prompt="@string/bus_title" />
+
+    <Spinner
+        android:id="@+id/direction"
+        style="@style/dropdown"
+        android:layout_width="280dp"
+        android:layout_below="@+id/bus_name"
+        android:layout_marginTop="5dp"
+        android:prompt="@string/destination_title" />
+
+</RelativeLayout>
